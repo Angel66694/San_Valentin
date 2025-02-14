@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carta.css">
+</head>
+<body class="cartas">
+    <header>
+        <h1>Para Mi Amor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="minijuego.html">Mini Juego</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="sobre" onclick="abrirCarta()">
+            <img src="assets/Sobre.webp" alt="Sobre">
+            <h2>Preciana aqui</h2>
+        </div>
+        <div id="carta" class="mensaje">
+            <p>Querida Jazmin,</p>
+            <p>Mi amor,
+
+                Hoy quiero expresarte, una vez más, cuánto te amo y lo agradecido que estoy de tenerte a mi lado. Eres la persona más especial en mi vida, y no pasa un día en que no me dé cuenta de la suerte que tengo al tenerte como mi compañera, mi amiga, mi amor y mi refugio.
+                
+                Cada momento a tu lado es un regalo que atesoro profundamente. El simple hecho de verte sonreír ilumina mi día, y cada abrazo tuyo me llena de una paz inmensa. Con cada palabra, con cada gesto, me haces sentir más amado de lo que jamás imaginé. Eres mi alegría, mi fortaleza y mi razón para seguir adelante.
+                
+                En este día de San Valentín, quiero recordarte lo agradecido que estoy por cada pequeño gesto de cariño, por cada sacrificio que haces por nosotros, y por el amor incondicional que me ofreces todos los días. Me siento afortunado de poder compartir mi vida contigo, y cada día contigo es una bendición que nunca quiero que termine.
+                
+                Quiero que sepas que siempre estaré a tu lado, para apoyarte en cada paso que demos juntos, para reír contigo en los momentos felices y para abrazarte en los más difíciles. Mi amor por ti no tiene fin, y mi compromiso contigo es eterno. Gracias por ser la mujer increíble que eres, por darme tanto amor y por construir juntos esta hermosa vida.
+                
+                Te amo más de lo que las palabras pueden expresar, y cada día me enamoro más de ti. ¡Feliz San Valentín, mi amor!</p>
+            <p>Con todo mi amor, Angel</p>
+        </div>
+    </main>
+    <audio autoplay loop>
+        <source src="assets/carta.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <script>
+        function abrirCarta() {
+            document.getElementById('carta').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

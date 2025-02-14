@@ -1,0 +1,22 @@
+/* Estilos de la galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas */
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+    gap: 10px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+.galeria img {
+    width: calc(33.33% - 10px); /* Ancho de cada imagen (3 por fila) */
+    height: 400px; /* Altura fija para todas las fotos */
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.galeria img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
