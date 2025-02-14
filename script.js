@@ -12,7 +12,7 @@ function moveCarrusel() {
 setInterval(moveCarrusel, 3000); // Cambia de imagen cada 3 segundos
 
 let contadorGolpes = 0; // Contador de golpes al topo
-const golpesNecesarios = 3; // Número de golpes necesarios para ganar
+const golpesNecesarios = 1; // Número de golpes necesarios para ganar
 
 function golpearTopo() {
     contadorGolpes++; // Incrementa el contador de golpes
